@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <title>JYancey WDD 330 Portfolio</title>
+  <script>
+    window.onload = function(){
+        document.getElementById("byweek").innerHTML = createList();}
+
+    const arr = ['week 1', 'week 2', 'week 3'];
+
+    function createList() { 
+        let txt = '<ol>';
+        for (x in arr)
+        txt += '<li>"'+ arr[x] + '"</li>' ;
+        txt += '</ol>'
+    return txt
+    }
+
+  </script>
+
+  <style>
+      
+
+  </style>
+</head>
+
+<body>
+    <header>
+        <h1>Jacque Yancey's </h1>
+        <h2>WWD 330 Portfolio </h2>
+    </header>
+    <main>
+        <p>Winter 2022</p>
+        <ol id = "byweek"></ol>
+    </main>
+</body>
+</html>
+
